@@ -1,4 +1,4 @@
-/*package tower_defense.states;
+package tower_defense.states;
 import tower_defense.GUI.GUI;
 import tower_defense.Game;
 import tower_defense.controler.Controller;
@@ -30,4 +30,4 @@ public abstract class State<T> {
         controller.step(game, action, time);
         viewer.draw(gui);
     }
-}*/
+}

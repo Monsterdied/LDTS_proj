@@ -1,6 +1,7 @@
 package tower_defense.GUI;
 
 
+import tower_defense.model.element.Position;
 
 import java.io.IOException;
 

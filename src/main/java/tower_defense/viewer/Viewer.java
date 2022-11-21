@@ -1,7 +1,6 @@
 package tower_defense.viewer;
 
 import tower_defense.GUI.GUI;
-
 import java.io.IOException;
 
 public abstract class Viewer<T> {
