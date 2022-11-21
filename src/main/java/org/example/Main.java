@@ -1,6 +1,6 @@
-/*package tower_defense;
-import tower_defense.GUI.LanternaGUI;
-import tower_defense.states.State;
+/*package org.example;
+import org.example.tower_defense.GUI.LanternaGUI;
+
 
 import java.awt.*;
 import java.io.IOException;

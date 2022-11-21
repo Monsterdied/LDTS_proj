@@ -1,8 +1,8 @@
-package tower_defense.states;
-import tower_defense.GUI.GUI;
-import tower_defense.Game;
-import tower_defense.controler.Controller;
-import tower_defense.viewer.Viewer;
+/*package org.example.tower_defense.states;
+
+
+import org.example.tower_defense.GUI.GUI;
+import org.example.tower_defense.viewer.Viewer;
 
 import java.io.IOException;
 
@@ -30,4 +30,4 @@ public abstract class State<T> {
         controller.step(game, action, time);
         viewer.draw(gui);
     }
-}
+}*/

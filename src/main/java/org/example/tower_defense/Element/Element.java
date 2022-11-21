@@ -1,4 +1,4 @@
-package tower_defense.model.element;
+package org.example.tower_defense.Element;
 
 public class Element {
     private Position position;

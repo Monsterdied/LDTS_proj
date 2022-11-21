@@ -1,18 +1,17 @@
-package tower_defense.GUI;
+package org.example.tower_defense.GUI;
 
-
-import tower_defense.model.element.Position;
+import org.example.tower_defense.Element.Position;
 
 import java.io.IOException;
 
 public interface GUI {
     ACTION getNextAction() throws IOException;
 
-    void drawHero(Position position);
+    void drawPlacer(Position position);
 
-    void drawWall(Position position);
+    void drawPath(Position position);
 
-    void drawMonster(Position position);
+    void drawEnemy(Position position);
 
     void drawText(Position position, String text, String color);
 
