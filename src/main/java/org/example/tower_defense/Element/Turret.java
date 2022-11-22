@@ -9,7 +9,7 @@ public class Turret extends Element {
         time = 0;
         this.cooldown=cooldown;
     }
-
+// turret de exemplo: cooldown 5 seg, range 4. turret - 1
     public int getRange() {
         return range;
     }

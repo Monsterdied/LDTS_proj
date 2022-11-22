@@ -1,5 +1,7 @@
-/*package org.example;
+package org.example;
 import org.example.tower_defense.GUI.LanternaGUI;
+import org.example.tower_defense.states.ArenaState;
+import org.example.tower_defense.states.State;
 
 
 import java.awt.*;
@@ -13,7 +15,8 @@ public class Game {
 
     public Game() throws FontFormatException, IOException, URISyntaxException {
         this.gui = new LanternaGUI(20, 20);
-        this.state = new MenuState(new Menu());
+        /*this.state = new State(new );*/
+        this.state = new ArenaState(new );
     }
 
     public static void main(String[] args) throws IOException, FontFormatException, URISyntaxException {
@@ -44,4 +47,4 @@ public class Game {
 
         gui.close();
     }
-}*/
+}

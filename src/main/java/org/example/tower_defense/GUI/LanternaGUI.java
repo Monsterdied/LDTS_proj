@@ -1,5 +1,7 @@
 package org.example.tower_defense.GUI;
 import com.googlecode.lanterna.TerminalSize;
+import com.googlecode.lanterna.TextColor;
+import com.googlecode.lanterna.graphics.TextGraphics;
 import com.googlecode.lanterna.input.KeyStroke;
 import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.screen.Screen;
@@ -91,6 +93,11 @@ public class LanternaGUI implements GUI {
     public void drawPath(Position position) {
 
     }
+    @Override
+    public void drawTurret(Position position){
+            drawCharacter(position.getX(), position.getY(),'T',"#FFFFFF");
+
+    }
 
     @Override
     public void drawEnemy(Position position) {
@@ -100,6 +107,12 @@ public class LanternaGUI implements GUI {
     @Override
     public void drawText(Position position, String text, String color) {
 
+    }
+
+    private void drawCharacter(int x, int y, char c, String color) {
+        TextGraphics tg = screen.newTextGraphics();
+        tg.setForegroundColor(TextColor.Factory.fromString(color));
+        tg.putString(x, y + 1, "" + c);
     }
 
     @Override
