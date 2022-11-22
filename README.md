@@ -1,12 +1,9 @@
-## LDTS_<T><G> - <PROJECT NAME>
+## LDTS_<8><>-Tower Defense
 
-> Include here one or two paragraphs explaining the main idea of the project, followed by a sentence identifying who the authors are.
+> In this exhilarating tower defense game your objective is to defend your flag, with your own towers, from the enemies, which in this case are balloons (Yes, you read well, balloons). There are multiple towers and strategies to spend time and have fun whilst playing this game. 
 
-**Example**:
+>This project was developed by João Pedro Dias Fernandes (up202108044@uporto.pt ), Rodrigo André Carvalho Póvoa (up202108890@uporto.pt ) and Tomás Miranda de Figueiredo Sarmento (up202108778@g.uporto.pt ).
 
-In this exciting platform game you can help KangarooBoy save the world, by collecting all the coins throughout ten different levels in which you will […].
-
-This project was developed by *John Doe* (*john.doe*@fe.up.pt) and *Jane Doe* (*jane.doe*@fe.up.pt) for LPOO 2018⁄19.
 
 ### IMPLEMENTED FEATURES
 
