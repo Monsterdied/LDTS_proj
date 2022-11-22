@@ -1,4 +1,4 @@
-package org.example.tower_defense.Menu;
+/*package org.example.tower_defense.Menu;
 
 import java.util.Arrays;
 import java.util.List;
@@ -43,4 +43,4 @@ public class Menu {
         return this.entries.size();
     }
 
-}
+}*/

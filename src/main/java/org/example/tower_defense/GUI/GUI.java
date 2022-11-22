@@ -1,6 +1,9 @@
 package org.example.tower_defense.GUI;
 
-import org.example.tower_defense.Element.Position;
+
+
+
+import org.example.tower_defense.model.Element.Position;
 
 import java.io.IOException;
 
@@ -11,7 +14,7 @@ public interface GUI {
 
     void drawPath(Position position);
 
-    void drawEnemy(Position position);
+    void drawBallon(Position position);
 
     void drawTurret(Position position);
 

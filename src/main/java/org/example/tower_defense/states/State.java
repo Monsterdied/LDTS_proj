@@ -3,6 +3,7 @@ package org.example.tower_defense.states;
 
 import org.example.Game;
 import org.example.tower_defense.GUI.GUI;
+import org.example.tower_defense.controller.Controller;
 import org.example.tower_defense.viewer.Viewer;
 
 import java.io.IOException;

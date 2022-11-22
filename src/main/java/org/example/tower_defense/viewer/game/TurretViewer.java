@@ -1,7 +1,7 @@
-package org.example.tower_defense.viewer.arena;
+package org.example.tower_defense.viewer.game;
 
-import org.example.tower_defense.Element.Turret;
 import org.example.tower_defense.GUI.GUI;
+import org.example.tower_defense.model.Element.Turret;
 
 public class TurretViewer implements ElementViewer<Turret> {
     @Override

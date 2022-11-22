@@ -1,4 +1,4 @@
-package org.example.tower_defense.Element;
+package org.example.tower_defense.model.Element;
 
 public class Position {
     private final int x;
