@@ -10,7 +10,7 @@
 
 
 
-- **Colocar torres e armadilhas ** - Quando o jogo se encontra em fase de construção, o jogador consegue movimentar um "placer" que lhe permite escolher uma posição e uma torre ou armadilha para lá colocar, se a posição for válida.
+**Colocar torres e armadilhas** - Quando o jogo se encontra em fase de construção, o jogador consegue movimentar um "placer" que lhe permite escolher uma posição e uma torre ou armadilha para lá colocar, se a posição for válida.
 
 
 
