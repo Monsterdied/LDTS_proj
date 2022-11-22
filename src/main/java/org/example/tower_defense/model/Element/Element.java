@@ -1,4 +1,6 @@
-package org.example.tower_defense.Element;
+package org.example.tower_defense.model.Element;
+
+import org.example.tower_defense.model.Position;
 
 public class Element {
     private Position position;

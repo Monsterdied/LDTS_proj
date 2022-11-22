@@ -1,4 +1,5 @@
-package org.example.tower_defense.Element;
+package org.example.tower_defense.model.Element;
+
 public class Turret extends Element {
     private int range;
     private long time;

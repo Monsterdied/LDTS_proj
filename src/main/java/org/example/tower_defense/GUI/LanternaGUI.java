@@ -1,5 +1,7 @@
 package org.example.tower_defense.GUI;
 import com.googlecode.lanterna.TerminalSize;
+import com.googlecode.lanterna.TextColor;
+import com.googlecode.lanterna.graphics.TextGraphics;
 import com.googlecode.lanterna.input.KeyStroke;
 import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.screen.Screen;
@@ -7,7 +9,7 @@ import com.googlecode.lanterna.screen.TerminalScreen;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 import com.googlecode.lanterna.terminal.swing.AWTTerminalFontConfiguration;
-import org.example.tower_defense.Element.Position;
+import org.example.tower_defense.model.Position;
 
 import java.awt.*;
 import java.io.File;
@@ -83,38 +85,46 @@ public class LanternaGUI implements GUI {
         }
 
     @Override
-    public void drawPlacer(Position position) {
+    public void drawPlacer(Position position) {drawCharacter(position.getX(), position.getY(), 'H', "#FFD700");
 
     }
 
     @Override
-    public void drawPath(Position position) {
+    public void drawPath(Position position) {drawCharacter(position.getX(), position.getY(), '#', "#FFD700");
 
     }
 
     @Override
-    public void drawEnemy(Position position) {
+    public void drawEnemy(Position position) {drawCharacter(position.getX(), position.getY(), 'E', "#FFD700");
 
     }
 
     @Override
     public void drawText(Position position, String text, String color) {
+        TextGraphics tg = screen.newTextGraphics();
+        tg.setForegroundColor(TextColor.Factory.fromString(color));
+        tg.putString(position.getX(), position.getY(), text);
+    }
 
+    private void drawCharacter(int x, int y, char c, String color) {
+        TextGraphics tg = screen.newTextGraphics();
+        tg.setForegroundColor(TextColor.Factory.fromString(color));
+        tg.putString(x, y + 1, "" + c);
     }
 
     @Override
     public void clear() {
-
+        screen.clear();
     }
 
     @Override
     public void refresh() throws IOException {
-
+        screen.refresh();
     }
 
     @Override
     public void close() throws IOException {
-
+        screen.close();
     }
 }
 

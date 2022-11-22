@@ -1,6 +1,8 @@
-/*package org.example;
+package org.example;
 import org.example.tower_defense.GUI.LanternaGUI;
-
+import org.example.tower_defense.states.MenuState;
+import org.example.tower_defense.states.State;
+import org.example.tower_defense.model.Menu.Menu;
 
 import java.awt.*;
 import java.io.IOException;
@@ -44,4 +46,4 @@ public class Game {
 
         gui.close();
     }
-}*/
+}
