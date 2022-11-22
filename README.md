@@ -7,17 +7,17 @@
 
 ### IMPLEMENTED FEATURES
 
-> This section should contain a list of implemented features and their descriptions. In the end of the section, include two or three screenshots that illustrate the most important features.
 
-**Examples**:
+Escolher dificuldade - 
 
-- **Jumping** - The game character will jump when the space bar key is pressed.
-- **Getting hidden coins** - When the game character hits a platform from below (by jumping beneath it) it will smash that segment of the platform and will get any coins that may exist hidden there.
+- **Colocar torres e armadilhas ** - Quando o jogo se encontra em fase de construção, o jogador consegue movimentar um "placer" que lhe permite escolher uma posição e uma torre ou armadilha para lá colocar, se a posição for válida.
+
+
 
 ### PLANNED FEATURES
 
 > This section is similar to the previous one but should list the features that are not yet implemented. Instead of screenshots you should include GUI mock-ups for the planned features.
-
+- **Escolher dificuldade** - Antes do jogo começar, o jogador tem a possibilidade de escolher entre três dificuldades, "easy", "medium" e "hard". A dificuldade irá alterar também o balanço inicial do jogador.
 ### DESIGN
 
 > This section should be organized in different subsections, each describing a different design problem that you had to solve during the project. Each subsection should be organized in four different parts:
