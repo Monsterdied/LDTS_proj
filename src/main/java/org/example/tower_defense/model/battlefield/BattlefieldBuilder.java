@@ -11,6 +11,7 @@ public abstract class BattlefieldBuilder {
         BattleField battlefield = new BattleField(getWidth(), getHeight());
 
         battlefield.setPaths(createPath());
+        battlefield.setPlacer(createPlacer());
 
         return battlefield;
     }

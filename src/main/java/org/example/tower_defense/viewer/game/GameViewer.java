@@ -15,9 +15,9 @@ public class GameViewer extends Viewer<BattleField> {
 
     @Override
     public void drawElements(GUI gui) {
-        if(getModel().getTurrets().size()!=0) drawElements(gui, getModel().getTurrets(), new TurretViewer());
-        if(getModel().getPaths().size()!=0) drawElements(gui, getModel().getPaths(), new PathViewer());
-        if(getModel().getBallons().size()!=0) drawElements(gui, getModel().getBallons(), new BallonViewer());
+        if(getModel().getTurrets()!=null) drawElements(gui, getModel().getTurrets(), new TurretViewer());
+        if(getModel().getPaths()!=null) drawElements(gui, getModel().getPaths(), new PathViewer());
+        if(getModel().getBallons()!=null) drawElements(gui, getModel().getBallons(), new BallonViewer());
         if(getModel().getPlacer()!=null) drawElement(gui, getModel().getPlacer(), new PlacerViewer());
 
         gui.drawText(new Position(0, 0), "Energy: " + getModel().getHp_base(), "#FFD700");

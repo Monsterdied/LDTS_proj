@@ -84,7 +84,7 @@ public class LanternaGUI implements GUI {
     }
 
     @Override
-    public void drawPlacer(Position position) {drawCharacter(position.getX(), position.getY(), 'H', "#FFD700");
+    public void drawPlacer(Position position) {drawCharacter(position.getX(), position.getY(), 'H', "#FFD780");
 
     }
 

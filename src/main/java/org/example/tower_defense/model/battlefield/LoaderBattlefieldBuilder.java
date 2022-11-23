@@ -15,10 +15,33 @@ public class LoaderBattlefieldBuilder extends BattlefieldBuilder {
 
     public LoaderBattlefieldBuilder(int level) throws IOException {
         this.level = level;
-
+/*
         URL resource = LoaderBattlefieldBuilder.class.getResource("/levels/level" + level + ".lvl");
         BufferedReader br = new BufferedReader(new FileReader(resource.getFile()));
-        lines = readLines(br);
+        lines = readLines(br);*/
+        lines=new ArrayList<>();
+        lines.add("####################");
+        lines.add("#                  #");
+        lines.add("# ###  ### ### ### #");
+        lines.add("# # #  ### #  M    #");
+        lines.add("# ###  ### ####### #");
+        lines.add("#                  #");
+        lines.add("# # ###### ####### #");
+        lines.add("# #      # #     # #");
+        lines.add("# #####  #    M  # #");
+        lines.add("#        # #     # #");
+        lines.add("# ############# ## #");
+        lines.add("#   #       #  M   #");
+        lines.add("#   #       #      #");
+        lines.add("# ### #### #### ## #");
+        lines.add("###  M #     #   # #");
+        lines.add("# #### ### #### ## #");
+        lines.add("# #    #  H      ###");
+        lines.add("# ## ############# #");
+        lines.add("#                  #");
+        lines.add("####################");
+
+
     }
 
     private List<String> readLines(BufferedReader br) throws IOException {
