@@ -9,7 +9,7 @@ import java.util.List;
 public class BattleField {
     private int width;
     private final int height;
-
+    private int money;
     private List<Path> paths;
     private List<Turret> turrets;
     private List<Ballon> ballons;
@@ -18,6 +18,14 @@ public class BattleField {
     public BattleField(int width, int height) {
         this.width = width;
         this.height = height;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
     }
 
     public void setPlacer(Placer placer) {

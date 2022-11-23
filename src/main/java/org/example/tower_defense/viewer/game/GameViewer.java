@@ -20,7 +20,11 @@ public class GameViewer extends Viewer<BattleField> {
         if(getModel().getBallons()!=null) drawElements(gui, getModel().getBallons(), new BallonViewer());
         if(getModel().getPlacer()!=null) drawElement(gui, getModel().getPlacer(), new PlacerViewer());
 
-        gui.drawText(new Position(0, 0), "Energy: " + getModel().getHp_base(), "#FFD700");
+        gui.drawText(new Position(0, 0), "Hp:" + getModel().getHp_base(), "#FF0000");
+        gui.drawText(new Position(8, 0), "Money:" + getModel().getHp_base()+"$", "#889b73");
+        gui.drawText(new Position(20, 6), "Turret 1:", "#8080FF");
+        gui.drawText(new Position(29, 6), "300$", "#889b73");
+
     }
     private <T extends Element> void drawElements(GUI gui, List<T> elements, ElementViewer<T> viewer) {
         for (T element : elements)
