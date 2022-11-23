@@ -1,6 +1,6 @@
 package org.example.tower_defense.model.Element;
 
-public class Turret extends Element {
+public class  Turret extends Element {
     private int range;
     private long time;
     private long cooldown;

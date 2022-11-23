@@ -1,9 +1,5 @@
 package org.example.tower_defense.model.battlefield;
-
-
-
 import org.example.tower_defense.model.Element.*;
-
 import java.util.List;
 
 public class BattleField {

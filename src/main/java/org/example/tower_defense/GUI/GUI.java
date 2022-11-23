@@ -26,5 +26,7 @@ public interface GUI {
 
     void close() throws IOException;
 
+    void drawText(org.example.tower_defense.model.Position position, String menu, String color);
+
     enum ACTION {UP, RIGHT, DOWN, LEFT, NONE, QUIT,TECLA1,TECLA2,TECLA3,TECLA4, SELECT}
 }

@@ -1,11 +1,8 @@
 package org.example;
-import org.example.tower_defense.model.battlefield.BattleField;
 import org.example.tower_defense.GUI.LanternaGUI;
-import org.example.tower_defense.model.battlefield.BattlefieldBuilder;
-import org.example.tower_defense.model.battlefield.LoaderBattlefieldBuilder;
-import org.example.tower_defense.states.StateBattlefield;
+import org.example.tower_defense.states.MenuState;
 import org.example.tower_defense.states.State;
-
+import org.example.tower_defense.model.Menu;
 
 import java.awt.*;
 import java.io.IOException;
@@ -18,8 +15,7 @@ public class Game {
 
     public Game() throws FontFormatException, IOException, URISyntaxException {
         this.gui = new LanternaGUI(20, 20);
-        /*this.state = new State(new );*/
-        this.state = new StateBattlefield(new LoaderBattlefieldBuilder(1).createBattleField());
+        this.state = new MenuState(new Menu());
     }
 
     public static void main(String[] args) throws IOException, FontFormatException, URISyntaxException {
