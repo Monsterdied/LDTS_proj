@@ -21,8 +21,10 @@
 
 ### PLANNED FEATURES
 
-> This section is similar to the previous one but should list the features that are not yet implemented. Instead of screenshots you should include GUI mock-ups for the planned features.
-- **Escolher dificuldade** - Antes do jogo começar, o jogador tem a possibilidade de escolher entre três dificuldades, "easy", "medium" e "hard". A dificuldade irá alterar também o balanço inicial do jogador.
+- **Choose the difficulty** - In the main menu, the player can choose the game's difficulty between easy, hard, Impoppable.
+- **Change the placer by a mouse pointer** - To increase the player's flexibility.
+- **Various types of ballons and turrets** - No need to have a description, it's already apparent what we mean by that.
+
 ### DESIGN
 
 > This section should be organized in different subsections, each describing a different design problem that you had to solve during the project. Each subsection should be organized in four different parts:
