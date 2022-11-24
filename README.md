@@ -7,12 +7,17 @@
 
 ### IMPLEMENTED FEATURES
 
-
-
-
-- **Colocar torres ** - Quando o jogo se encontra em fase de construção, o jogador consegue movimentar um "placer" que lhe permite escolher uma posição e uma torre ou se a posição for válida.
-
-
+- **Menu** - In the menu, you can either start a game, exit the game or select the difficulty of your next game.
+- **BattleField** - The BattleField is the "map" of the game where you can see the path of the ballons, your placer, the turrets and many more.
+- **Timer** - Shows how much time has passed since the start of the game.
+- **Placer** - The placer is a element that you can move (has a character "H") along the battlefield.
+- **Spawn** - The spawn is a position in the map where the ballons start their attack.
+- **Flag** - The flag is a position in the map where the ballons reach their objective.
+- **Path** - The path is the "path" that the ballons follow.
+- **Wall** - Defines the limits where your placer can go.
+- **Turret** - Different type of structures (that you build) that are trying to stop the ballons to reach their objective.
+- **Money** - Game currency that allows you to build new turrets.
+- **Health** - Represents the player health that decreases each time a ballon hits the Flag.
 
 ### PLANNED FEATURES
 
