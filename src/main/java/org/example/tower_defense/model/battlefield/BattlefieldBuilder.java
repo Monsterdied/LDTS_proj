@@ -1,8 +1,7 @@
 package org.example.tower_defense.model.battlefield;
 
 
-import org.example.tower_defense.model.Element.Path;
-import org.example.tower_defense.model.Element.Placer;
+import org.example.tower_defense.model.Element.*;
 
 import java.util.List;
 
@@ -12,7 +11,9 @@ public abstract class BattlefieldBuilder {
 
         battlefield.setPaths(createPath());
         battlefield.setPlacer(createPlacer());
-
+        battlefield.setFlag(createFlag());
+        battlefield.setSpawn(createSpawn());
+        battlefield.setWalls(createWalls());
         return battlefield;
     }
 
@@ -21,6 +22,12 @@ public abstract class BattlefieldBuilder {
     protected abstract int getHeight();
 
     protected abstract List<Path> createPath();
+
+    protected abstract List<Wall> createWalls();
+
+    protected abstract Flag createFlag();
+
+    protected abstract Spawn createSpawn();
 
 
     protected abstract Placer createPlacer();

@@ -1,6 +1,5 @@
 package org.example.tower_defense.model.battlefield;
-import org.example.tower_defense.model.Element.Path;
-import org.example.tower_defense.model.Element.Placer;
+import org.example.tower_defense.model.Element.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -22,22 +21,22 @@ public class LoaderBattlefieldBuilder extends BattlefieldBuilder {
         lines=new ArrayList<>();
         lines.add("####################");
         lines.add("#                  #");
-        lines.add("# ###  ### ### ### #");
-        lines.add("# # #  ### #  M    #");
-        lines.add("# ###  ### ####### #");
         lines.add("#                  #");
-        lines.add("# # ###### ####### #");
-        lines.add("# #      # #     # #");
-        lines.add("# #####  #    M  # #");
-        lines.add("#        # #     # #");
-        lines.add("# ############# ## #");
-        lines.add("#   #       #  M   #");
-        lines.add("#   #       #      #");
-        lines.add("# ### #### #### ## #");
-        lines.add("###  M #     #   # #");
-        lines.add("# #### ### #### ## #");
-        lines.add("# #    #  H      ###");
-        lines.add("# ## ############# #");
+        lines.add("#                  #");
+        lines.add("#           H      #");
+        lines.add("#                  #");
+        lines.add("#                  #");
+        lines.add("#                  #");
+        lines.add("#   %%%%%%         #");
+        lines.add("#   %    %         #");
+        lines.add("#   %    %         #");
+        lines.add("#   %    %    %%%%F#");//F flag onde os balons morrem S spawn dos balões e % path se quiserem saber pq e que a flag as walls i o path sao iguais eu depois troco isso esta no viewer
+        lines.add("#S%%%    %    %    #");
+        lines.add("#        %    %    #");
+        lines.add("#        %    %    #");
+        lines.add("#        %    %    #");
+        lines.add("#        %%%%%%    #");
+        lines.add("#                  #");
         lines.add("#                  #");
         lines.add("####################");
 
@@ -66,16 +65,27 @@ public class LoaderBattlefieldBuilder extends BattlefieldBuilder {
 
     @Override
     protected List<Path> createPath() {
-        List<Path> walls = new ArrayList<>();
+        List<Path> paths = new ArrayList<>();
 
         for (int y = 0; y < lines.size(); y++) {
             String line = lines.get(y);
             for (int x = 0; x < line.length(); x++)
-                if (line.charAt(x) == '#') walls.add(new Path(x, y));
+                if (line.charAt(x) == '%') paths.add(new Path(x, y));
         }
+        return paths;
+    }
+    @Override
+    protected List<Wall> createWalls() {
+        List<Wall> walls = new ArrayList<>();
 
+        for (int y = 0; y < lines.size(); y++) {
+            String line = lines.get(y);
+            for (int x = 0; x < line.length(); x++)
+                if (line.charAt(x) == '#') walls.add(new Wall(x, y));
+        }
         return walls;
     }
+
 
     @Override
     protected Placer createPlacer() {
@@ -83,6 +93,24 @@ public class LoaderBattlefieldBuilder extends BattlefieldBuilder {
             String line = lines.get(y);
             for (int x = 0; x < line.length(); x++)
                 if (line.charAt(x) == 'H') return new Placer(x, y);
+        }
+        return null;
+    }
+    @Override
+    protected Spawn createSpawn() {
+        for (int y = 0; y < lines.size(); y++) {
+            String line = lines.get(y);
+            for (int x = 0; x < line.length(); x++)
+                if (line.charAt(x) == 'S') return new Spawn(x, y);
+        }
+        return null;
+    }
+    @Override
+    protected Flag createFlag() {
+        for (int y = 0; y < lines.size(); y++) {
+            String line = lines.get(y);
+            for (int x = 0; x < line.length(); x++)
+                if (line.charAt(x) == 'F') return new Flag(x, y);
         }
         return null;
     }

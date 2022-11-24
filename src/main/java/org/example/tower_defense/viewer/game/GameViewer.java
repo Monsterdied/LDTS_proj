@@ -18,8 +18,10 @@ public class GameViewer extends Viewer<BattleField> {
         if(getModel().getTurrets()!=null) drawElements(gui, getModel().getTurrets(), new TurretViewer());
         if(getModel().getPaths()!=null) drawElements(gui, getModel().getPaths(), new PathViewer());
         if(getModel().getBallons()!=null) drawElements(gui, getModel().getBallons(), new BallonViewer());
+        if(getModel().getWalls()!=null) drawElements(gui, getModel().getWalls(), new WallViewer());
         if(getModel().getPlacer()!=null) drawElement(gui, getModel().getPlacer(), new PlacerViewer());
-
+        if(getModel().getFlag()!=null)drawElement(gui, getModel().getFlag(), new FlagViewer());
+        if(getModel().getSpawn()!=null)drawElement(gui, getModel().getSpawn(), new SpawnViewer());
         gui.drawText(new Position(0, 0), "Hp:" + getModel().getHp_base(), "#FF0000");
         gui.drawText(new Position(8, 0), "Money:" + getModel().getHp_base()+"$", "#889b73");
         gui.drawText(new Position(20, 6), "Turret 1:", "#8080FF");

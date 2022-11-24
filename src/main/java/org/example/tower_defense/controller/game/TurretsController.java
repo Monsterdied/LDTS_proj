@@ -6,8 +6,8 @@ import org.example.tower_defense.GUI.GUI;
 
 import java.io.IOException;
 
-public class TurretController extends GameController{
-    public TurretController(BattleField battlefield) {super(battlefield);}
+public class TurretsController extends GameController{
+    public TurretsController(BattleField battlefield) {super(battlefield);}
 
     @Override
     public void step(Game game, GUI.ACTION action, long time) throws IOException {
